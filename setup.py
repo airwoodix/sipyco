@@ -8,6 +8,9 @@ setup(
     description="Simple Python communications",
     license="LGPLv3+",
     install_requires=["setuptools", "numpy"],
+    extras_require={
+        "fast-b64": ["pybase64"],
+    },
     packages=find_packages(),
     entry_points={
         "console_scripts": [
